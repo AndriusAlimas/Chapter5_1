@@ -13,7 +13,7 @@
   
   <servlet-mapping>
   	<servlet-name>for chapter 5</servlet-name>
-  	<url-pattern>chapter5.do</url-pattern>
+  	<url-pattern>/chapter5.do</url-pattern>
   </servlet-mapping>
   
 </web-app>
