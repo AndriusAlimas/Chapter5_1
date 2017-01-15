@@ -53,6 +53,15 @@ public class Chapter5Servlet extends HttpServlet {
   }
   public void doPost(HttpServletRequest request, 
 		  HttpServletResponse response)throws ServletException,IOException{
-	  
+	  // first we need to get ServletConfig object because we want later to use it:
+	  ServletConfig servletConfig = this.getServletConfig();
+	  //now we can get from specifix servlet init parameter which is otherEmail:
+      String other_email = servletConfig.getInitParameter("otherEmail");
+      // we use request object to set attribute which is request scope:
+      request.setAttribute("init_parameter", other_email);
+      // now we dispatch to jsp page with request and response details:
+      // this is difference then response.sendRedirect() figure out difference:
+      RequestDispatcher dis = request.getRequestDispatcher("other.jsp");
+      dis.forward(request, response);
   }
 }
