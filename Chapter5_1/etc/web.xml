@@ -5,4 +5,10 @@
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>for chapter5</servlet-name>
+  	<servlet-class>com.example.servlet.Chapter5Servlet</servlet-class>
+  </servlet>
+  
 </web-app>
