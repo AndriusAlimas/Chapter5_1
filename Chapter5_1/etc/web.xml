@@ -6,6 +6,11 @@
   version="4.0"
   metadata-complete="true">
   
+  <context-param>
+  	<param-name>City</param-name>
+  	<param-value>Wakefield</param-value>
+  </context-param>
+  
     <servlet>
         <servlet-name>for chapter 5</servlet-name>
         <servlet-class>com.example.servlet.Chapter5Servlet</servlet-class>
