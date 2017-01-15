@@ -11,4 +11,9 @@
   	<servlet-class>com.example.servlet.Chapter5Servlet</servlet-class>
   </servlet>
   
+  <servlet-mapping>
+  	<servlet-name>for chapter 5</servlet-name>
+  	<url-pattern>chapter5.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
